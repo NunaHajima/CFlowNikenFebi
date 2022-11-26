@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CFlow_Project_Niken Febi</string>
+    <string name="masuk">Masuk</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+</resources>

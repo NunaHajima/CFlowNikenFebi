@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrasi2"
+    android:background="@drawable/bgregister">
+
+    <Button
+        android:id="@+id/btn_masuk2"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Masuk"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/oren"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_password2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/inp_password2"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/abugelap"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_passwordreg" />
+
+    <TextView
+        android:id="@+id/txt_namatokoreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="NAMA TOKO"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_buatakunreg" />
+
+    <TextView
+        android:id="@+id/txt_emailreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="EMAIL"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_namatoko" />
+
+    <TextView
+        android:id="@+id/txt_passwordreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="PASSWORD"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_emailmasuk" />
+
+    <EditText
+        android:id="@+id/inp_emailmasuk"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Email@gmail.com"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/abugelap"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_emailreg" />
+
+    <TextView
+        android:id="@+id/txt_buatakunreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Buat Akun"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inp_namatoko"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Masukan nama toko Anda"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/abugelap"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_namatokoreg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
