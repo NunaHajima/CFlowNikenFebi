@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registrasi2"
+    tools:context=".Registration"
     android:background="@drawable/bgregister">
 
     <Button
@@ -85,10 +85,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inp_emailmasuk" />
+        app:layout_constraintTop_toBottomOf="@+id/inp_emailOS" />
 
     <EditText
-        android:id="@+id/inp_emailmasuk"
+        android:id="@+id/inp_emailOS"
         android:layout_width="317dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"

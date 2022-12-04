@@ -1,20 +1,11 @@
 package com.example.cflow_project_nikenfebi
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Registrasi2 : Activity() {
+class DebtList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registrasi2)
-
-        btnLoginListener()
+        setContentView(R.layout.activity_debt_list)
     }
-
-    private fun btnLoginListener() {
-
-    }
-
 }
-

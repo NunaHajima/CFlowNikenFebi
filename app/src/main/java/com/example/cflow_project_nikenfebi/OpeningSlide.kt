@@ -3,9 +3,7 @@ package com.example.cflow_project_nikenfebi
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.widget.Button
-import androidx.core.os.HandlerCompat.postDelayed
 
 class OpeningSlide : Activity() {
 
@@ -20,11 +18,11 @@ class OpeningSlide : Activity() {
         btnregistrasiOS = findViewById(R.id.btn_registrasiOS)
 
         btnloginOS.setOnClickListener(){
-            startActivity(Intent(this, Masuk::class.java))
+            startActivity(Intent(this, LogIn::class.java))
         }
 
         btnregistrasiOS.setOnClickListener(){
-            startActivity(Intent(this, Registrasi2::class.java))
+            startActivity(Intent(this, Registration::class.java))
         }
     }
 }

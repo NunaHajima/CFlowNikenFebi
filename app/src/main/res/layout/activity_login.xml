@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgmasuk"
-    tools:context=".Masuk">
+    tools:context=".LogIn">
 
     <TextView
         android:id="@+id/txt_masukmasuk"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/inp_emailmasuk"
+        android:id="@+id/inp_emailOS"
         android:layout_width="310dp"
         android:layout_height="52dp"
         android:background="@drawable/custom_input"
@@ -61,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inp_emailmasuk" />
+        app:layout_constraintTop_toBottomOf="@+id/inp_emailOS" />
 
     <Button
         android:id="@+id/btn_masukOS"

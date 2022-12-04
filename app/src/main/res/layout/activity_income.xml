@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgincome"
+    tools:context=".Income">
+
+    <Button
+        android:id="@+id/btn_penerimaanpiutang"
+        android:layout_width="148dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:shadowColor="@color/abunormal"
+        android:text="Penerimaan Piutang"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/abunormal"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/btn_pendapatan4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_pemasukan"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Simpan"
+        android:textColor="#000000"
+        app:backgroundTint="@color/abunormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_deskripsi" />
+
+    <Button
+        android:id="@+id/btn_pendapatan4"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Pendapatan"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@color/abunormal"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inp_namapelanggan"
+        android:layout_width="272dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nama Pelanggan"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/abunormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_tanggal" />
+
+    <EditText
+        android:id="@+id/inp_deskripsi"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Catatan"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/abunormal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_nominal"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:text="DAFTAR PIUTANG"
+        android:textColor="#000000"
+        app:backgroundTint="@color/oren"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pemasukan"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <EditText
+        android:id="@+id/inp_nominal"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Rp"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/abunormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_namapelanggan" />
+
+    <EditText
+        android:id="@+id/inp_tanggal"
+        android:layout_width="273dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Tanggal"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="@color/abunormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pendapatan4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

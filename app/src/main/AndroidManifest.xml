@@ -13,14 +13,42 @@
         android:theme="@style/Theme.CFlow_Project_NikenFebi"
         tools:targetApi="31">
         <activity
-            android:name=".Masuk"
+            android:name=".DateFilter"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".DebtList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ReceivList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Outcome"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Income"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LogIn"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -42,7 +70,7 @@
         </activity>
         <activity android:name=".OpeningSlide" />
         <activity
-            android:name=".Registrasi2"
+            android:name=".Registration"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
