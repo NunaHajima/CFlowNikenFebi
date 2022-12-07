@@ -4,6 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DateFilter">
+    tools:context=".DateFilter"
+    android:background="@drawable/bgdatefilt">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="111dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+    <TextView
+        android:id="@+id/txt_filttgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Filter Tanggal"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_lihattransaksi"
+        android:layout_width="408dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="lihat Transaksi Keuangan Toko Kamu Bedasarkan Tanggal"
+        android:textColor="@color/abunormal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_mulaitanggal"
+        android:layout_width="276dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="252dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Mulai Tanggal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_sampaitanggal"
+        android:layout_width="278dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="364dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Sampai Tanggal"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_terapkan"
+        android:layout_width="139dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Terapkan"
+        android:textColorHint="@color/oren"
+        app:backgroundTint="@color/oren"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
