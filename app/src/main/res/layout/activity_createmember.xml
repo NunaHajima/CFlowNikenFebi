@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Member.crtmember"
+    android:background="@drawable/bgincome">
+
+    <EditText
+        android:id="@+id/inp_namemember"
+        android:layout_width="265dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Nama pelanggan"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_typemember"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/save_member"
+        android:layout_width="155dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Simpan"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_namemember" />
+
+    <Spinner
+        android:id="@+id/spinner_typemember"
+        android:layout_width="260dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="168dp"
+        android:entries="@array/type_member"
+        android:popupBackground="@color/greynorm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

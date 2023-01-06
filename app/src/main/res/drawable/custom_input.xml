@@ -7,8 +7,8 @@
         <shape
             android:shape="rectangle">
             <corners android:radius="10dp"/>
-            <solid android:color="@color/abunormal"/>
-            <stroke android:color="@color/oren" android:width="2dp"/>
+            <solid android:color="@color/greynorm"/>
+            <stroke android:color="@color/oranye" android:width="2dp"/>
 
         </shape>
     </item>
@@ -17,7 +17,7 @@
         android:state_enabled="true">
         <shape
             android:shape="rectangle">
-            <solid android:color="@color/abunormal"/>
+            <solid android:color="@color/greynorm"/>
             <corners android:radius="14dp"/>
 
         </shape>

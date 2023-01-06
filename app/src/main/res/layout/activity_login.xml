@@ -5,7 +5,7 @@
     android:id="@+id/txt_view1masuk"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgmasuk"
+    android:background="@drawable/background"
     tools:context=".LogIn">
 
     <TextView
@@ -35,7 +35,7 @@
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
         android:textColor="#000000"
-        android:textColorHint="@color/abugelap"
+        android:textColorHint="@color/darkgrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -57,7 +57,7 @@
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
         android:textColor="#000000"
-        android:textColorHint="@color/abugelap"
+        android:textColorHint="@color/darkgrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,13 +73,24 @@
         android:textColor="#000000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:backgroundTint="@color/oren"
+        app:backgroundTint="@color/oranye"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inp_passwordOS"
         app:layout_constraintVertical_bias="0.188" />
+
+    <ImageView
+        android:id="@+id/rectangle_home"
+        android:layout_width="504dp"
+        android:layout_height="459dp"
+        android:layout_marginBottom="530dp"
+        android:src="@drawable/round30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="button">#A6A0A0</color>
     <color name="button2">#B1AFAF</color>
-    <color name="oren">#FEB06A</color>
-    <color name="abu38">#61D9D9D9</color>
-    <color name="abunormal">#D9D9D9</color>
-    <color name="abugelap">#6E6D6D</color>
+    <color name="oranye">#FEB06A</color>
+    <color name="gray38">#61D9D9D9</color>
+    <color name="greynorm">#D9D9D9</color>
+    <color name="darkgrey">#6E6D6D</color>
 </resources>

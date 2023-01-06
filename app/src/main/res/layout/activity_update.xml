@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateTransaction.UpdateActivity"
+    android:background="@drawable/bgdatefilt">
+
+    <Spinner
+        android:id="@+id/spinner_type2"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="100dp"
+        android:entries="@array/type_transaksi"
+        android:gravity="center_horizontal"
+        android:popupBackground="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Update2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_Update2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Update"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/upd_date"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="yyyy/mm/dd"
+        android:inputType="datetime"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_type2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/upd_Customers"
+        android:layout_width="284dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="272dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_date"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/upd_desc"
+        android:layout_width="285dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Deskripsi"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_nominal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/upd_nominal"
+        android:layout_width="284dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Nominal"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_Customers"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="203dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_shape"
+        android:text="Update"
+        app:backgroundTint="@color/oranye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_desc"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/txt_ViewTypeTran"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@color/oranye"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_type2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Update2"
+        app:layout_constraintVertical_bias="0.473" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

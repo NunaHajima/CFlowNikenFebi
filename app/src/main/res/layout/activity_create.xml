@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgincome"
+    tools:context=".CreateTransaction.CreateTransaction">
+
+    <Button
+        android:id="@+id/btn_saveIncome"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/oranye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_deskripsi" />
+
+    <EditText
+        android:id="@+id/inp_customernameIncome"
+        android:layout_width="272dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nama Pelanggan"
+        android:inputType="textPersonName"
+        android:textColor="@color/greynorm"
+        android:textColorHint="@color/greynorm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_dateIncome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/inp_deskripsi"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Catatan"
+        android:inputType="textPersonName"
+        android:textColor="@color/greynorm"
+        android:textColorHint="@color/greynorm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_nominal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/inp_nominal"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Rp"
+        android:inputType="number"
+        android:textColor="@color/greynorm"
+        android:textColorHint="@color/greynorm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_customernameIncome"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <EditText
+        android:id="@+id/inp_dateIncome"
+        android:layout_width="273dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="yyyy/mmm/dd"
+        android:inputType="date"
+        android:textColor="@color/greynorm"
+        android:textColorHint="@color/greynorm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <Spinner
+        android:id="@+id/spiner_typeTransaction"
+        android:layout_width="274dp"
+        android:layout_height="55dp"
+        android:entries="@array/type_transaksi"
+        android:popupBackground="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import com.example.cflow_project_nikenfebi.ReceivList.CreateReceiv
+import com.example.cflow_project_nikenfebi.ReceivList.updatereceiv
 
 class SplashActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,8 +14,9 @@ class SplashActivity : Activity() {
 
         /** kodingan untuk Splash Screen**/
         Handler().postDelayed({
-            startActivity(Intent(this, OpeningSlide::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         },2000
         )
+
     }
 }
